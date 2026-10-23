@@ -441,9 +441,14 @@ def send_to_telegram(file_path, caption):
         log(f"Telegram Error: {e}")
 
 def fetch_telegram_bridges():
-    api_id = int(os.getenv("TELEGRAM_API_ID", "0"))
-    api_hash = os.getenv("TELEGRAM_API_HASH", "")
-    session = os.getenv("TELEGRAM_SESSION", "")
+    # GitHub passes a secret that does not exist as an EMPTY string, not as a missing
+    # variable, so int("") used to crash the whole run on a fork without Telegram secrets.
+    try:
+        api_id = int(os.getenv("TELEGRAM_API_ID") or 0)
+    except ValueError:
+        api_id = 0
+    api_hash = os.getenv("TELEGRAM_API_HASH") or ""
+    session = os.getenv("TELEGRAM_SESSION") or ""
     if api_id == 0 or not api_hash or not session:
         log("GetBridgesBot disabled: TELEGRAM_API_ID/API_HASH/SESSION secrets missing.")
         return {}
