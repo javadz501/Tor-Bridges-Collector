@@ -1,6 +1,13 @@
 name: Update Tor Bridges
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'main.py'
+      - 'requirements.txt'
+      - 'tests/**'
+      - '.github/workflows/bridge_scraper.yml'
   schedule:
     - cron: '30 2 * * *'
   workflow_dispatch:
@@ -39,7 +46,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 telethon
+          pip install -r requirements.txt
+
+      - name: Validate source and tests
+        run: |
+          python -m compileall -q main.py tests
+          python -m unittest discover -s tests -v
 
       - name: Setup IPv6 connectivity (Cloudflare WARP)
         uses: fscarmen/warp-on-actions@v1.4
