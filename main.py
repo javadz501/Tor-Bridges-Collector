@@ -54,7 +54,7 @@ def write_text_atomic(file_path, content):
 
 
 def write_lines_atomic(file_path, lines, preserve_existing_on_empty=False):
-    normalized = [str(line).strip() for line in lines if str(line).strip()]
+    normalized = list(dict.fromkeys(str(line).strip() for line in lines if str(line).strip()))
     if preserve_existing_on_empty and not normalized and os.path.exists(file_path):
         return False
     write_text_atomic(file_path, "".join(line + "\n" for line in normalized))
