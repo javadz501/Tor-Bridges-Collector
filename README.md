@@ -1,6 +1,6 @@
 ## If you find this helpful, don't forget to ⭐ it
 
-_Last updated: 2026-11-26 11:22 UTC_
+_Last updated: 2026-11-27 11:16 UTC_
 
 This repository automatically collects, checks reachability, and archives Tor bridges. A GitHub Action runs daily at 02:30 UTC to fetch new bridges from the official Tor Project.
 
@@ -9,8 +9,8 @@ These lists contain bridges that passed a transport-level reachability check. A 
 
 | Transport | IPv4 (Tested) | Count | IPv6 (Tested) | Count |
 | :--- | :--- | :--- | :--- | :--- |
-| **obfs4** | [obfs4_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_tested.txt) | **496** | [obfs4_ipv6_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_ipv6_tested.txt) | **360** |
-| **WebTunnel** | [webtunnel_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel_tested.txt) | **197** | [webtunnel_ipv6_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel_ipv6_tested.txt) | **91** |
+| **obfs4** | [obfs4_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_tested.txt) | **496** | [obfs4_ipv6_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_ipv6_tested.txt) | **361** |
+| **WebTunnel** | [webtunnel_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel_tested.txt) | **194** | [webtunnel_ipv6_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel_ipv6_tested.txt) | **83** |
 | **Vanilla** | [vanilla_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_tested.txt) | **500** | [vanilla_ipv6_tested.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_ipv6_tested.txt) | **75** |
 
 ### Fresh Bridges (Last 72 Hours)
@@ -20,16 +20,16 @@ Bridges discovered within the last 3 days.
 | :--- | :--- | :--- | :--- | :--- |
 | **obfs4** | [obfs4_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_72h.txt) | **2** | [obfs4_ipv6_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_ipv6_72h.txt) | **2** |
 | **WebTunnel** | [webtunnel_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel_72h.txt) | **2** | [webtunnel_ipv6_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel_ipv6_72h.txt) | **2** |
-| **Vanilla** | [vanilla_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_72h.txt) | **4** | [vanilla_ipv6_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_ipv6_72h.txt) | **4** |
+| **Vanilla** | [vanilla_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_72h.txt) | **6** | [vanilla_ipv6_72h.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_ipv6_72h.txt) | **4** |
 
 ### Full Archive (Since 2026-01-30)
 History of all collected bridges. First-seen timestamps are retained indefinitely.
 
 | Transport | IPv4 | Count | IPv6 | Count |
 | :--- | :--- | :--- | :--- | :--- |
-| **obfs4** | [obfs4.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4.txt) | **681** | [obfs4_ipv6.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_ipv6.txt) | **360** |
+| **obfs4** | [obfs4.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4.txt) | **682** | [obfs4_ipv6.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/obfs4_ipv6.txt) | **361** |
 | **WebTunnel** | [webtunnel.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel.txt) | **309** | [webtunnel_ipv6.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/webtunnel_ipv6.txt) | **263** |
-| **Vanilla** | [vanilla.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla.txt) | **502** | [vanilla_ipv6.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_ipv6.txt) | **75** |
+| **Vanilla** | [vanilla.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla.txt) | **504** | [vanilla_ipv6.txt](https://raw.githubusercontent.com/javadz501/Tor-Bridges-Collector/refs/heads/main/bridge/vanilla_ipv6.txt) | **75** |
 
 ## Important Notes on IPv6 & WebTunnel
 
